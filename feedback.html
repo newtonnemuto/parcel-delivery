@@ -1,0 +1,25 @@
+ <html>
+    <head>
+        <title>user account </title>
+        <link rel="stylesheet" href="formms.css">
+    </head>
+    <body>
+     <div> 
+        <form  method="POST" action="feedback.php" onsubmit="return feedbackvalidation()">
+            <p style="text-align: center;">Feedback</p>
+        <label> Domain</label>
+        <select name="Domain" id="Domain">
+          <option value="Suggestion">Suggestion</option>
+          <option value="Approud">Approud</option>
+          <option value="complain">complain</option>
+         </select>
+        <label>Feedback</label>
+          <textarea id="Feedback" name="Feedback"></textarea>
+        </br>
+
+           <button type="submit" >Submit</button>  
+        </form>
+     </div>
+     <script src="registration.js"></script>
+    </body>
+</html>

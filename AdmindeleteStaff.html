@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Delete staff </title>
+        <link rel="stylesheet" href="formms.css"  >
+    </head>
+    <body>
+     <div> 
+        <form  method="POST" action="adminDeletestaff.php" onsubmit="return NotNullAndNan()">
+            <p style="text-align: center;">Delete staff</p>
+        <label>Enter staff ID</label>
+          <input type="text" id="searchid" name="staffId"><br>
+           
+       <button type="submit">Delete staff</button>  
+       <br>
+       <h5><a href="AdminDashboard.php">Back</a></h5><br>
+        
+        </form>
+
+        <script src="validate.js"></script>
+     </div>
+    </body>
+</html>

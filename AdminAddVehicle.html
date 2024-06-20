@@ -1,0 +1,38 @@
+ <html>
+    <head>
+        <title>add vehicle </title>
+        <link rel="stylesheet" href="formms.css">
+    </head>
+    <body>
+     <div> 
+        <form  method="POST" action="AdminAddVehicle.php" onsubmit="return adminADdVehicle()">
+            <p style="text-align: center;">Add vehicle</p>
+        <label>Plate number</label>
+          <input type="text" id="plateNO" name="plateNO"><br>
+          <label>Select type of vehicle</label>
+        <select name="type" id="type">
+          <option value="lorry">lorry</option>
+          <option value="pickUp">pickup</option>
+          <option value="probox">probox</option>
+          </select>
+          <label>Capacity in tonnes</label>
+          <input type="text" id="capacity" name="capacity"><br>
+
+          <label>Enter driverId</label>
+          <input type="text" id="driverId" name="driverId"><br>
+       
+          <label>Select vehicle's state</label>
+          <select name="state" id="state">
+            <option value="Down">Down</option>
+            <option value="Oky">Oky</option>
+             
+            </select>
+         
+       <button type="submit">ADD vehicle</button>  
+       <br>
+       <h5><a href="AdminDashboard.php">Back</a></h5><br>
+        </form>
+     </div>
+     <script src="registration.js"></script>
+    </body>
+</html>

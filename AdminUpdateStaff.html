@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Update staff</title>
+        <link rel="stylesheet" href="formms.css">
+    </head>
+    <body>
+     <div> 
+        <form  method="POST" action="AdminUpdateStaff.php" onsubmit="return updatestaff()">
+            <p style="text-align: center;">Update staff</p>
+         
+        <label>Enter staffId</label>
+          <input type="text" id="staffId" name="staffId"></input>
+        </br> 
+
+        <label>Enter staff phone number</label>
+        <input type="text" id="phoneNo" name="phoneNo"></input>
+          
+        </br>
+        <label>Enter staff email</label>
+        <input type="text" id="email" name="email"></input>
+         
+    </br>
+       
+      <label>State</label>
+        <select id="state" name="state"> 
+        <option value="on duty">on duty</option>
+        <option value="offDuty">offDuty</option>
+      </select></br>
+         
+      </br>
+      <label>Mode Of Employment</label>
+      <select id="modeOfEmployment" name="modeOfEmployment"> 
+      <option value="parmanent">Parmanent</option>
+      <option value="contract">Contract</option>
+    </select></br>
+       
+    </br>
+
+           <button type="submit" >Submit</button>  
+        </form>
+        <script src="three.js"></script>
+     </div>
+    </body>
+</html>

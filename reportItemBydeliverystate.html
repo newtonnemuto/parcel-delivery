@@ -1,0 +1,29 @@
+ <html>
+    <head>
+        <title>Item by deliverystate </title>
+        <link rel="stylesheet" href="formms.css">
+    </head>
+    <body>
+     <div>  
+        <form  method="POST" action="adminReportGeneratin.php" onsubmit=" return  NotNull ()">
+            <p style="text-align: center;">Delivery state</p>
+         
+        <label>Select state</label>
+        <input type="hidden"   name="category" value="state">
+        <select id="searchid" name="searchid">
+          <option  value="sucessfull">Delivered</option>
+          <option  value="NULL">Yet to be delivered</option>
+        </select>
+         
+        </br>
+
+           <button type="submit" >Submit</button><br>
+           <br> 
+           <a href="adminReporst.php">Back</a>  
+        </form> 
+      <script src="validate.js"></script>
+         
+     </div>
+      
+    </body>
+</html>

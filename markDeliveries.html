@@ -1,0 +1,29 @@
+ <html>
+    <head>
+        <title>Mark deliveries </title>
+        <link rel="stylesheet" href="formms.css">
+    </head>
+    <body>
+     <div> 
+        <form  method="POST" action="markDeliveries.php" onsubmit="return markDeliveries()">
+            <p style="text-align: center;">Mark deliverd order</p>
+        <label>Order ID</label>
+          <input type="text" id="orderId" name="orderId"><br>
+        <label>Timetaken(Hrs-Min-sec)</label>
+          <input type="text" id="TimeTaken" name="TimeTaken"><br>
+        <label>Route</label>
+          <input type="text" id="Route"  name="Route"><br>
+          <label>Receiver code</label>
+          <input type="text" id="receiverCode"  name="receiverCode"><br>
+        <label>Delivery state</label>
+        <select name="deliveryState" id="deliveryState">
+          <option value="sucessfull">sucessfull</option>
+          <option value="Damanged">Damanged</option>
+                    </select>
+
+                 <button type="submit" >Submit</button>  
+        </form>
+     </div>
+     <script src="registration.js"></script>
+    </body>
+</html>

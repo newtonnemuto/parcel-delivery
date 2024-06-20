@@ -1,0 +1,36 @@
+ <html>
+<head>
+       <title>Select Regions with a Dog</title>
+    <link rel="stylesheet" href="capture.css">
+     </head>
+<body>
+     
+    <form id="captchaForm" action="capture.php" method="POST">
+        <h2 id="heading"> </h2>
+        <div id="CAP">
+            
+            <div>
+                <section><img src="" id="img1" class="one" alt=""></section>
+                <section><img src="" id="img2" class="two" alt=""></section>
+                <section><img src="" id="img3" class="three" alt=""></section>
+            </div>
+            <div>
+                <section><img src="" id="img4" class="two" alt=""></section>
+                <section><img src="" id="img5" class="three" alt=""></section>
+                <section><img src="" id="img6" class="one" alt=""></section>
+            </div>
+            <div>
+                <section><img src="" id="img7" class="two" alt=""></section>
+                <section><img src="" id="img8" class="one" alt=""></section>
+                <section><img src="" id="img9" class="three" alt=""></section>
+            </div>
+            <input type="hidden" id="hidden" name="hidden" value="">
+            <br><br>
+             
+             <label>prove your not a robot</label>                         
+            <button type="button" style="color: rgb(255, 0, 132);" onclick="submitCaptcha()">Capture</button>
+        </div>
+    </form>
+   <script src="capture.js"></script>
+</body>
+</html> 

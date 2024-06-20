@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login </title>
+        <link rel="stylesheet" href="formms.css" >
+    </head>
+    <body>
+     <div id="form"> 
+        <form  method="POST" action="login.php"  onsubmit= "return loginvalidate ()">
+            <P style="text-align: center;">Login</P>
+        
+       <label>Enter userName</label>
+       <input type="text" id="userName" name="userName" ><br>
+       
+       <label> Enter password</label>
+       <input type="text" id="password" name="password"><br>
+       <label>Select role</label>
+       <select name="role" id="role">
+         <option value="client">Client</option>
+         <option value="driver">driver</option>
+         <option value="customerCare">customerCare</option>
+        <option value="admin">Admin</option>
+      </select>
+
+       <button type="submit">Login</button>
+       <p><a href="resetPassword.html">Forgot password (Reset password)</a></p>  
+        </form>
+     </div>
+     <script src="registration.js"></script>
+    </body>
+</html>

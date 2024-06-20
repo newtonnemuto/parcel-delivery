@@ -1,0 +1,69 @@
+
+ <html>
+    <head>
+        <title>add staff </title>
+        <link rel="stylesheet" href="form.css">
+    </head>
+    <body>
+     
+        <form  method="POST" action="adminAddStaff.php" onsubmit="return adminAddStaff()">
+    
+          <p style="text-align: center;">Add staff</p>
+          <div class="formcontainer"> 
+            <div class="first">
+        <label>First Name</label>
+          <input type="text" id="name" name="name"><br>
+          <label>Last Name</label>
+          <input type="text" id="lname" name="lname"><br>
+          <label>IDNo</label>
+          <input type="text" id="IDNo" name="IDNo"><br>
+        <label>MobileNumber</label>
+          <input type="text" id="mobileNumber" name="mobileNumber"><br>
+        <label>Email</label>
+          <input type="text" id="email"  name="email"><br>
+        <label>Salary</label>
+          <input type="text" id="salary" name="salary"><br>
+        </div>
+        <div class="first"> 
+        <label>Position</label>           
+          <select name="position" id="position">
+            <option value="driver">Driver</option>
+            <option value="Admin">Admin</option>
+            <option value="customerCare">CustomerCare</option>             
+             </select>           
+        <label>State</label>
+          <select name="state" id="state">
+            <option value="on duty">on duty</option>
+            <option value="offDuty">offDuty</option>
+             </select>
+          <label>Year of Birth (YYYY-MM-DD)</label>
+          <input type="text" id="DtOfBth" name="DtOfBth"><br>
+        <label>select mode of Employment</label>
+        <select name="mode" id="mode">
+          <option value="parmanent">Parmanent</option>
+          <option value="contract">Contract</option>
+          <option value="casual">Casual</option>
+          </select>
+       <label>Select Gender</label>
+        <select name="gender" id="gender">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+       </select>
+       <label>UserName</label>
+          <input type="text" id="userName" name="userName">
+      </div>
+    </div>
+         <div style="text-align: center;">
+       <button type="submit">ADD staff</button>  
+      </div>
+      
+       <br>
+       <h5><a href="profileBack.php">Back</a></h5><br>
+        
+     
+  
+        </form>
+   
+     <script src="registration.js"></script>
+    </body>
+</html>

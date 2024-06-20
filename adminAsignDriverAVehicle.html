@@ -1,0 +1,31 @@
+ <html>
+    <head>
+        <title>update vehicle</title>
+        <link rel="stylesheet" href="formms.css">
+    </head>
+    <body>
+     <div> 
+        <form  method="POST" action="adminAsignDriverVehicle.php"
+          onsubmit="return updateVehicle()">
+            <p style="text-align: center;">Update vehicle</p>
+         
+        <label>Enter vehicleId</label>
+          <input type="text" id="vehicleId" name="vehicleId"></input>
+        </br>
+        <label>Enter driverId</label>
+        <input type="text" id="driverId" name="driverId"></input>
+      </br>
+      <label>Select state</label>
+        <select id="state" name="state"> 
+        <option value="Down">Down</option>
+        <option value="Oky">Oky</option>
+      </select></br>
+         
+      </br>
+
+           <button type="submit" >submit</button>  
+        </form>
+        <script src="three.js"></script>
+     </div>
+    </body>
+</html>

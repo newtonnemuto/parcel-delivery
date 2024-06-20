@@ -1,0 +1,33 @@
+ body{
+    /* Set body display to flex, align items and justify content to center to center content vertically and horizontally */
+    
+  
+    background-color: antiquewhite; /* set backgroud color to antiquewhite */
+    display: flex; /* display in flexbox layout, allow the element to shrink and expand*/
+    align-items: center;/* align items to the center horizontally*/
+    justify-content: center;/* align items to the center vertically, on the main axis*/
+}
+
+#CAP {
+    display: grid; /* use grid layout */
+    grid-template-columns:  1fr 1fr 1fr; /*divid the header into four columns*/
+    gap: 1px; /*set a gap of 1px between the grid items*/
+    padding:0px; /* Set padding to 0 */
+    
+}
+  
+/* Styling for the  form elements */
+form{   
+    
+    width:300px; /* Set width to 300px */
+    height:auto; /* Set height to auto, adjusting based on content */
+    }
+        section img {
+        width: 150px; /* Adjust as needed */
+        height: 100px; /* Adjust as needed */
+        cursor: pointer;/*change cursor to pointer to show the user the element is clikcable */
+    }
+    .selected-region {
+        border: 5px solid rgb(128, 0, 45); /* set border color */
+    }
+ 

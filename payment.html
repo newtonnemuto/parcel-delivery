@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Payment</title>
+        <link rel="stylesheet" href="formms.css">
+    </head>
+    <body>
+     <div> 
+        <form  method="POST" action="Finish_order_client.php" onsubmit="return validatepayment()">
+        <p style="text-align: center;">mpesa paybill 26354  A/c no 'youruser id'</p>
+        <p style="text-align: center;">KCB A/C no 6735 4873 3476 9283 (ongata rongi branch)</p>
+        <p style="text-align: center;">EQUATY Bank A/C no 4535 4509 3476 9283 (ongata rongi branch)</p>
+        <p style="text-align: center;">Cooperative bank A/C no 67356 8736 99283 (ongata rongi branch)</p>
+        <label>payment Method</label>
+        <select name="paymentMethod" id="paymentMethod">
+          <option value="Mpesa">Mpesa</option>
+          <option value="KCB"> KCB Bank</option>
+          <option value="EQUATY">EQUATY bank</option>
+          <option value="cooperative">cooperative bank</option>
+        </select>
+        <label>payment statement</label>
+          <textarea id="paymenStatement" name="paymenStatement"></textarea>
+        </br>
+
+           <button type="submit">Submit</button>  
+        </form>
+        <script src="three.js"></script>
+     </div>
+ 
+    </body>
+</html>
